@@ -74,22 +74,16 @@ button{
     border: none;
 }
 
-section.data{
+.loading{
+    display: none;
+}
+.data-container{
     max-width: 600px;
     margin: 0 auto;
     margin-top: 20px;
     text-align: center;
 }
-.loading{
-    display: none;
-}
-.data-container{
 
-    max-width: 50%;
-    margin: 30px auto;
-    justify-content: center;
-    text-align: center;
-}
 .data-container p.def{
     font-size: 20px;
     font-weight: 600;
@@ -116,4 +110,47 @@ footer{
 footer p{
     color: #ddd;
     font-weight: 700;
+}
+
+@media only screen and (max-device-width: 480px) {
+    .container{
+        width: 1000px;
+        max-width: 75%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .right-container a{
+        display: none;
+    }
+    .input-container{
+        padding-top: 120px;
+    }
+    h2{
+    text-align: center;    
+    font-size: 25px;
+    text-transform: capitalize;
+    }
+
+    input{
+    border: none;
+    padding: 9px;
+    font-size: 16px;
+    min-width: 250px;
+    outline: none;
+    }
+    .data-container{
+        max-width: 400px;
+        margin: 0 auto;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .data-container p.def{
+        font-size: 18px;
+        font-weight: 600;
+        color: #35496b;
+        line-height: 1.6;
+    }
+
 }
