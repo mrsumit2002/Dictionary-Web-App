@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/titleIcon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Dictionary</title>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="left-container">
+                <h1 class="logo"><span class="Slogo">S</span>Dictionary</h1>
+            </div>
+            <div class="right-container">
+                <a href="index.html">Home</a>
+                <a href="https://github.com/mrsumit2002" target="_blank">Contact us</a>
+                <a href="https://github.com/mrsumit2002" target="_blank">Source Code</a>
+            </div>
+            
+        </div>
+    </nav>
+
+    <section class="input-container">
+        <h2>Find any word meaning exist in the world 🙂</h2>
+        <div class="form-wrap">
+            <div class="input-wrap">
+                <input type="text" id="input" placeholder="Type a word">
+                <button id="search">Search</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="data-container">
+        <span class="loading">Loading...</span>
+        <p class="def"></p>
+        <div class="audio"></div>
+        <div class="not_found"></div>
+    </section>
+    <script src="script.js" defer></script>
+</body>
+</html>
